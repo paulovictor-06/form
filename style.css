@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#6e3081, rgb(125, 70, 184), #8a2392);
+}
+
+#formulario.active 
+#form-header h1{
+    color: #fff;
+}
+
+#formulario.active #icone-input1, 
+#formulario.active #icone-input2,
+#formulario.active #icone-input3,
+#formulario.active input {
+    color: white
+}
+
+#formulario.active .input-box label {
+    color: #ccc;
+}
+
+#formulario{
+    background-color: #fff;
+    border-radius: 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+#form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#form-header h1 {
+   font-size: 40px;
+   position: relative;
+}
+
+#form-header h1::before {
+    content: "";
+    width: 40%;
+    background-color: #9a4ced;
+    height: 2px;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 10px;
+    
+}
+
+#form-header i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+    font-weight: 900;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box label {
+    color: gray;
+    font-size: 14px;
+    cursor: text;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    width: 260px;
+    border-bottom: 1px solid #9a4ced;
+}
+
+.input-field i {
+    color: black;
+}
+
+.input-field i.normal {
+    color: black;
+}
+
+.input-field input {
+    border: none;
+    color: rgb(67, 62, 62);
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+
+.input-box a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #843dd0;
+}
+
+.input-box a:active {
+    color: rgb(140, 88, 229);
+}
+
+#login-btn {
+    width: 100%;
+    text-align: center;
+    background-color: #b62dc0;
+    padding: 12px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#login-btn a {
+    color: #fff;
+    text-decoration: none;
+    
+    
+}
+
+#login-btn:hover {
+    transform: scale(1.05);
+    background-color: #8827a5;
+}
+
+
+#formulario.active {
+    background-color: #000;
+}
+
+#icone-input.active {
+    color: #fff;
+}
+
+#icone-header.active {
+    color: #fff;
+}

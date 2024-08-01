@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formlário</title>
+</head>
+<body>
+    <main>
+        <form id="formulario" action="#">
+
+
+            <div id="form-header">
+                <h1>Login</h1>
+                <i id="icone-header" class="fa-solid fa-moon"></i>
+            </div> <!--input-title-->
+
+
+            <div id="inputs">
+
+
+                <div class="input-box">
+                    <label for="name">
+                        Name
+                        <div class="input-field">
+                            <i id="icone-input1" class="fa-solid fa-user"></i>
+                            <input type="text" name="name" id="name" required>
+                        </div> <!--input-field-->
+                    </label>
+                </div> <!--input-box-->
+
+                
+                    <div class="input-box">
+                        <label for="email">
+                            E-mail
+                            <div class="input-field">
+                                <i id="icone-input2"  class="fa-solid fa-envelope"></i>
+                                <input type="email" name="email" id="email" required>
+                            </div> <!--input-field-->
+                        </label>
+                    </div> <!--input-box-->
+
+
+                    <div class="input-box">
+                        <label for="password">
+                            Senha
+                            <div class="input-field">
+                                <i id="icone-input3"  class="fa-solid fa-key"></i>
+                                <input type="password" name="password" id="password" required>
+                            </div> <!--input-field-->
+                        </label>
+                        <a href="#" class="forget-password">Forgot your password?</a>
+                    </div> <!--input-box-->
+
+
+            </div> <!--inputs-->
+
+
+            <div id="login-btn">
+                <a href="#">Enviar</a>
+            </div> <!--login-btn-->
+            
+        </form>
+    </main>
+<script src="scrpit.js"></script>
+</body>
+</html>
